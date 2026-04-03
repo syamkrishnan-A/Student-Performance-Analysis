@@ -1,0 +1,123 @@
+📄 Student Performance Analysis Report
+🟦 1. Introduction
+
+In today’s data-driven world, analyzing student performance helps educators understand learning patterns and improve teaching strategies. This project focuses on analyzing a dataset of student scores to identify key factors affecting academic performance.
+
+The analysis uses Python-based data science tools to explore relationships between variables such as gender, lunch type, and test preparation.
+
+🟦 2. Dataset Description
+
+The dataset contains 1000 student records with the following features:
+
+Gender
+Race/Ethnicity
+Parental Level of Education
+Lunch Type
+Test Preparation Course
+Math Score
+Reading Score
+Writing Score
+
+A new feature called average_score was created to represent overall student performance.
+
+🟦 3. Objectives
+
+The main objectives of this project are:
+
+Analyze student performance across subjects
+Identify factors affecting performance
+Compare performance across categories
+Visualize data using charts
+Generate meaningful insights
+🟦 4. Tools and Technologies
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Jupyter Notebook
+🟦 5. Methodology
+5.1 Data Loading
+Dataset was loaded using pandas.read_csv()
+Verified using .head(), .tail(), .shape()
+5.2 Data Cleaning
+Checked missing values using .isna().sum()
+No missing values found
+Verified data types using .dtypes
+5.3 Feature Engineering
+
+A new column was created:
+
+average_score = (math + reading + writing) / 3
+5.4 Data Analysis
+Calculated overall average score
+Performed group-wise analysis:
+Gender-based performance
+Lunch-based performance
+Test preparation impact
+5.5 Data Visualization
+
+The following charts were created:
+
+Heatmap (Correlation)
+Bar Chart (Gender vs Scores)
+Histograms (Score Distribution)
+Pie Chart (Subject Contribution)
+🟦 6. Visualizations
+📊 1. Heatmap
+Shows correlation between subjects
+Strong relationship between reading and writing
+📊 2. Bar Chart
+Compares performance based on gender
+Shows average scores difference
+📊 3. Histograms
+Displays distribution of:
+Math scores
+Reading scores
+Writing scores
+📊 4. Pie Chart
+Shows contribution of each subject to overall performance
+🟦 7. Key Insights
+🔍 1. Overall Performance
+Average score ≈ 67.77
+Indicates moderate performance level
+📚 2. Subject-wise Performance
+Reading ≈ 34.0% (highest)
+Writing ≈ 33.5%
+Math ≈ 32.5% (lowest)
+
+👉 Students perform weaker in math
+
+👩‍🎓👨‍🎓 3. Gender Analysis
+Female ≈ 69.57
+Male ≈ 65.83
+
+👉 Female students perform better on average
+
+🍱 4. Lunch Impact
+Standard ≈ 70.83
+Free/Reduced ≈ 62.19
+
+👉 Socio-economic factors affect performance
+
+📘 5. Test Preparation
+Completed ≈ 72.67
+Not completed ≈ 65.04
+
+👉 Preparation significantly improves scores
+
+🔗 6. Correlation Analysis
+Strong correlation:
+Reading ↔ Writing (~0.95)
+Subjects are interrelated
+📊 7. Score Distribution
+Most students score between 50–80
+Few extreme performers
+
+👉 Normal distribution observed
+
+🟦 8. Conclusion
+
+The analysis shows that student performance is influenced by multiple factors such as gender, socio-economic conditions, and preparation level. Mathematics appears to be the weakest subject, while reading and writing show stronger performance.
+
+The findings suggest that targeted interventions, such as additional math support and encouraging test preparation, can improve overall student outcomes.
